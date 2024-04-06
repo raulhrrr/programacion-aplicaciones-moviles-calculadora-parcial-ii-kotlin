@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">programacion-aplicaciones-moviles-calculadora-simple-kotlin</string>
+    <string name="title">Parcial II - Kotlin</string>
+    <string name="txtInsert">Ingrese cualquier texto</string>
+    <string name="visualice">Visualizar</string>
+    <string name="txtEntered">Texto ingresado</string>
+    <string name="home">Volver al inicio</string>
+</resources>
