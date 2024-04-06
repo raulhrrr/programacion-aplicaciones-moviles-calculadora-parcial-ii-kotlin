@@ -12,11 +12,9 @@ class MainDisplay : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_display)
 
-        val txtEntered = findViewById<TextView>(R.id.txtEntered)
-        val message = intent.getStringExtra("message")
         val mainHome = findViewById<Button>(R.id.goToHome)
-
-        txtEntered.text = message
+        val txtEntered = findViewById<TextView>(R.id.txtEntered)
+        txtEntered.text = intent.getStringExtra("message")
 
         mainHome.setOnClickListener {
             startActivity(

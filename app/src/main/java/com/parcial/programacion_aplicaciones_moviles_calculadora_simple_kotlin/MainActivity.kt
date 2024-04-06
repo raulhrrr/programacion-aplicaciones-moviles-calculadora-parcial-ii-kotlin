@@ -14,13 +14,11 @@ class MainActivity : AppCompatActivity() {
 
         val mainDisplay = findViewById<Button>(R.id.goToDisplay)
         val txtInserted = findViewById<TextView>(R.id.txtInserted)
-        val messageDTO = MessageDTO(txtInserted.text.toString())
 
         mainDisplay.setOnClickListener {
-            val intent = Intent(this, MainDisplay::class.java)
-            intent.putExtra("message", txtInserted.text.toString())
             startActivity(
-                intent
+                Intent(this, MainDisplay::class.java)
+                    .putExtra("message", txtInserted.text.toString())
             )
         }
 
